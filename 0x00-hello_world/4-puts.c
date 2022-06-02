@@ -1,27 +1,13 @@
-nclure <stdio.h>
-
-
-
+#inclure <stdio.h>
 /**
+ * principal - Point d’entrée
  *
- *  * principal - Point d’entrée
+ * Description: imprime « La programmation est comme la construction d’un puzzle multilingue »
  *
- *   *
- *
- *    * Description: imprime « La programmation est comme la construction d’un puzzle multilingue »
- *
- *     *
- *
- *      * Retour: Toujours 0 (Succès)
- *
- *       */
-
+ * Retour: Toujours 0 (Succès)
+ */
 int main(void)
-
 {
-
-		puts(« \"La programmation, c’est comme construire un puzzle multilingue »);
-
-			retour (0);
-
+	puts(« \"La programmation, c’est comme construire un puzzle multilingue »);
+	retour (0);
 }
