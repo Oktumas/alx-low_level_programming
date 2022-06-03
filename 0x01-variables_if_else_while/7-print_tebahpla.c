@@ -1,38 +1,17 @@
-# inclure  < stdio.h >
+#include <stdio.h>
 
-/* *
-
-* main - imprime les alphabets en minuscules et majuscules,
-
-* suivi d'une nouvelle ligne
-
-* Retour : Toujours 0 (Succès)
-
+/**
+ * main - prints alphabets in lowercase and uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
-
-int  principal ( vide )
-
+int main(void)
 {
-
-int je ;
-
-pour (je = ' z ' ; je >= ' une ' ; je--)
-
+int i;
+for (i = 'z'; i >= 'a'; i--)
 {
-
-putchar (i);
-
+putchar(i);
 }
-
-putchar ( ' \n ' );
-
-retour ( 0 );
-
+putchar('\n');
+return (0);
 }
-
-
-
-
-
-Intimité
-
