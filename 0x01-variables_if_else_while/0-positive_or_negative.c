@@ -25,5 +25,3 @@ int main()
     printf("Please provide a number"); 
   }
 }
-
-}
