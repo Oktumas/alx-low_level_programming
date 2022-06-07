@@ -1,24 +1,21 @@
 
 #include "main.h"
-
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * Return: nothing, return void
- */
-
+* main - Prints numbers between 00 to 89.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+	char word[9] = "_putchar";
+	int i = 0;
 
-return (0);
+	for (i = 0; i < 8; i++)
+		_putchar(word[i]);
+
+	_putchar('\n');
+
+	return (0);
 }
