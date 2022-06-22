@@ -27,25 +27,3 @@ int _sqrt_recursion(int n)
 {
 return (sqrt2(n, 1));
 }
-
-/**
- *
- *  * _sqrt_recursion - returns the natural square root of n
- *
- *   * @n: Number Integer
- *
- *    *
- *
- *     * Return: 1 if successful.
- *
- *      * On error, return -1, and errno is set appropriately.
- *
- *       */
-
-int _sqrt_recursion(int n)
-
-{
-
-	return (sqrt2(n, 1));
-
-}
