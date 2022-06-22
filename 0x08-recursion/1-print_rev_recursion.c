@@ -1,16 +1,17 @@
 #include "main.h"
-/**
- *_print_rev_recursion - prints a string in reverse
- *@s: pointer block of memory to fill
- *Return: void
- */
 
+/**
+ * _print_rev_recursion - Prints a string in reverse
+ * @s: string
+ *
+ * Return: 1 if successful
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 void _print_rev_recursion(char *s)
 {
-if (*s)
+if (*s != '\0')
 {
 _print_rev_recursion(s + 1);
 _putchar(*s);
 }
 }
-© 2022 G
