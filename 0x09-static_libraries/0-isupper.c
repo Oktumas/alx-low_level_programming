@@ -1,20 +1,33 @@
-#include "main.h"
+nclude "main.h"
+
 /**
- * _isupper-evaluate if letter is uppercase
- *@c: print int
- * Return: 0 if successful
- */
+ *
+ *  * _isupper - checks if c is uppercase
+ *
+ *   * @c: the var to be evaluated
+ *
+ *    *
+ *
+ *     * Return: 1 for uppercase else 0
+ *
+ *      */
 
 int _isupper(int c)
-{
-if (c >= 'A' && c <= 'Z')
-{
-return (1);
-}
 
-else
 {
-return (0);
-}
+
+
+
+		if (c >= 'A' && c <= 'Z')
+
+				return (1);
+
+
+
+
+
+			else
+
+					return (0);
 
 }
