@@ -1,104 +1,34 @@
-<<<<<<< HEAD
-nclude "main.h"
-
-
-
+#include "main.h"
 /**
- *
- *  *_strncpy - copy src into dest.
- *
- *   *@dest: first string.
- *
- *    *@src: second string.
- *
- *     *@n: the number of bytes to use from src.
- *
- *      *Return: string.
- *
- *      */
-
-
-
+ * *_strncpy - copies a string
+ * @dest: string pointer
+ * @src: string pointer
+ * @n: number of bytes to use from src
+ * Return: string
+ */
 char *_strncpy(char *dest, char *src, int n)
-
 {
 
-	int i = 0, k = 0;
+	int i = 0;
+	int j = 0;
 
-
-
-	while (n > k)
-
+	while (n > j)
 	{
-
-		if (src[k] == '\0')
-
+		if (src[j] == '\0')
 		{
-
-			for (; k < n; k++)
-
+			for (; j < n; j++)
 			{
-
-				dest[i] = '\0';
-
-				i++;
-
-			}
-
-		}
-
-		else
-
-		{
-
-			dest[i] = src[k];
-
-			k++;
-
+			dest[i] = '\0';
 			i++;
-
+			}
 		}
-
+		else
+		{
+		dest[i] = src[j];
+		j++;
+		i++;
+		}
 	}
 
-
-
 	return (dest);
-
 }
-=======
-#include "main.h"
-
-/**
- *_strncpy - copy src into dest.
- *@dest: first string.
- *@src: second string.
- *@n: the number of bytes to use from src.
- *Return: string.
-*/
-
-char *_strncpy(char *dest, char *src, int n)
-{
-int i = 0, k = 0;
-
-while (n > k)
-{
-if (src[k] == '\0')
-{
-for (; k < n; k++)
-{
-dest[i] = '\0';
-i++;
-}
-}
-else
-{
-dest[i] = src[k];
-k++;
-i++;
-}
-}
-
-return (dest);
-}
->>>>>>> a6aedc5adac0707b50dd470507d24378ce4f0a02
