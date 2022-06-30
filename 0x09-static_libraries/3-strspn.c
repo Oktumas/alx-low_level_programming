@@ -1,20 +1,23 @@
 #include "main.h"
 /**
- * _strcmp - concatenates two strings
- * @s1: first string
- * @s2: second string
- * Return: nteger
+ * _strspn - function that gets the length of a prefix substring
+ * @s:pointer string
+ * @accept:searching string
+ * Return: number of bytes in the initial segment of s
  */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int i, j;
 
-	int i = 0;
-	int cmp = 0;
-
-	while (s1[i] != '\0' && s2[i] != '\0' && cmp == 0)
+	for (j = 0; *(s + j); j++)
 	{
-	cmp = s1[i] - s2[i];
-	i++;
+		for (i = 0; *(accept + i); i++)
+		{
+			if (*(s + j) == *(accept + i))
+				break;
+		}
+		if (*(accept + i) == '\0')
+			break;
 	}
-	return (cmp);
+	return (j);
 }
