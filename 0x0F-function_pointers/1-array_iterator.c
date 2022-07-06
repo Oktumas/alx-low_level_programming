@@ -1,22 +1,22 @@
-#inclure « function_pointers.h »
+#include "function_pointers.h"
 
 /**
- * array_iterator - fonction qui exécute un tableau de fonctions
- * @array : tableau des fonctions à exécuter
- * @size : taille du tableau
- * @action: pointeur vers la fonction
+  * array_iterator - function that executes array of functions
+  * @array: array of functions to be executed
+  * @size: size of array
+  * @action: pointer to the function
   *
- * Retour: Rien
+  * Return: Nothing
   */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	non signé int i = 0;
+	unsigned int i = 0;
 
-	if (tableau != NULL && action != NULL && taille > 0)
+	if (array != NULL && action != NULL && size > 0)
 	{
-		tandis que (i < taille)
+		while (i < size)
 		{
-			action(tableau[i]);
+			action(array[i]);
 			i++;
 		}
 	}
