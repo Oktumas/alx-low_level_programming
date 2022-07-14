@@ -1,5 +1,4 @@
-
-bal main
+global main
 	section .text
 	
 main:	
@@ -14,4 +13,3 @@ main:
 	syscall
 message:
 	db "Hello, Holberton", 10
-
